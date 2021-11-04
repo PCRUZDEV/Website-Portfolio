@@ -6,15 +6,22 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #e9e7e7;
-  --primary-color: #53269b;
-  --secondary-color: #ff771d;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: #ff6600;
+  --primary-shadow: #dad8d8;
+  --secondary-shadow: #4d4d4d;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+}
+
+/* Background Image for the Page */
+
+body {
+  background-image: url(/developer-portfolio/assets/images/img2.jpg);
+  background-repeat: no-repeat;
+  background-position: -100px;
 }
 
 /* Variables end */
@@ -37,7 +44,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: rgb(40, 0, 63);
+  font-weight: bold;
 }
 
 a:hover {
@@ -48,10 +56,11 @@ body {
   font-family: var(--font-family);
 }
 
-section {
-  /* max-width: 1100px;
-  margin: auto; */
+/* section {
+  max-width: 1100px;
+  margin: auto; 
 }
+*/
 
 /* CSS Resets end */
 
@@ -117,11 +126,12 @@ nav ul li {
   height: 10rem;
   width: 10rem;
   border-radius: 100%;
-  margin: 80px 0px 80px 0px;
+  margin: 70px;
+  box-shadow: 0 px 2 px 15 px 2 px var(--primary-shadow);
 }
 
 .bio {
-  width: 25rem;
+  width: 20rem;
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -152,6 +162,7 @@ nav ul li {
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  text-align: center;
 }
 
 /* More about ends */
@@ -280,7 +291,7 @@ nav ul li {
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
@@ -309,6 +320,7 @@ nav ul li {
   right: 0.5%;
   bottom: 3%;
   cursor: pointer;
+
 }
 
 .up-arrow {
@@ -354,7 +366,6 @@ footer {
   nav ul {
     position: fixed;
     background-color: var(--bg-color);
-    flex-direction: column;
     top: 86px;
     left: 10%;
     width: 80%;
