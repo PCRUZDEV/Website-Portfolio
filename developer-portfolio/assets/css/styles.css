@@ -126,7 +126,7 @@ nav ul li {
 .hero img {
   height: 10rem;
   width: 10rem;
-  border-radius: 100%;
+  border-radius: 20%;
   margin: 70px;
   box-shadow: 0 px 2 px 15 px 2 px var(--primary-shadow);
 }
