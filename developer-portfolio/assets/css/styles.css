@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
+
 /* Variables */
 :root {
   --font-family: "Roboto", sans-serf;
@@ -13,7 +14,7 @@
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
-  --transition: 0.3s;
+  --transition: 0.5s;
 }
 
 /* Background Image for the Page */
@@ -75,7 +76,8 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(167, 168, 172, 0.725);
+  backdrop-filter: blur(3px);
 }
 
 nav h1 {
@@ -187,6 +189,7 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+
 
 /* Skills section ends */
 
@@ -371,7 +374,8 @@ footer {
     width: 80%;
     text-align: center;
     transform: translateX(120%);
-    transition: transform 0.5s ease-in;
+    transition: transform 1.2s ease-in-out;
+
   }
 
   nav ul li {
